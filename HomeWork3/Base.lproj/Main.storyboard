@@ -34,17 +34,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-ex-0dr">
-                                                    <rect key="frame" x="23" y="17" width="210" height="46"/>
+                                                    <rect key="frame" x="23" y="14.5" width="210" height="52"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7f-hN-v1f">
-                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTT-XQ-gcL">
-                                                            <rect key="frame" x="0.0" y="25.5" width="210" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="29" width="210" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -70,6 +70,7 @@
                                             <outlet property="makeLabel" destination="S7f-hN-v1f" id="81N-cN-A0j"/>
                                             <outlet property="modelLabel" destination="MTT-XQ-gcL" id="VYc-aF-9mJ"/>
                                             <outlet property="yearLabel" destination="PME-TK-PBv" id="RS0-NM-0Ph"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="editCarSegue" id="FtN-D6-OSR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,7 +87,7 @@
                     <navigationItem key="navigationItem" title="Cars list" id="hCC-uJ-s1G">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5p4-BZ-XxQ">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="createNewCarSegue" id="s3X-5M-Kh8"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="createCarSegue" id="s3X-5M-Kh8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -185,4 +186,7 @@
             <point key="canvasLocation" x="-525" y="35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FtN-D6-OSR"/>
+    </inferredMetricsTieBreakers>
 </document>

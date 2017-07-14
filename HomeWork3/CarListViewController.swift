@@ -14,12 +14,11 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
     
     var cars: [Car] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,15 +39,26 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
         return cell
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "createNewCarSegue" {
-            let nextVC = segue.destination as! ViewController
-            nextVC.delegate = self
-        }
-    }
-    
     func onCreatedNew(car: Car) -> Void {
         cars.append(car)
         tableView.reloadData()
+    }
+    
+    func reloadData() {
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createCarSegue" {
+            let nextVC = segue.destination as! ViewController
+            nextVC.delegate = self
+        } else if segue.identifier == "editCarSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let nextVC = segue.destination as! ViewController
+                nextVC.delegate = self
+                nextVC.carEdit = cars[indexPath.row]
+                
+            }
+        }
     }
 }

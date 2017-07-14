@@ -11,5 +11,6 @@ import Foundation
 protocol AddNewCarDelegate: class {
     
     func onCreatedNew(car: Car) -> Void
-    
+    func reloadData() -> Void
+
 }

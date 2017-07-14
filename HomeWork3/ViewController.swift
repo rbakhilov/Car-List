@@ -15,11 +15,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var carYear: UITextField!
     
     weak var delegate: AddNewCarDelegate?
+    var carEdit: Car?
+    
 
     var year = Array(1950...2017).map { String($0) }
     let picker = UIPickerView()
     
     override func viewDidLoad() {
+        
+        if let carEdit = carEdit {
+            makeTextField.text = carEdit.make
+            modelTextField.text = carEdit.model
+            carYear.text = carEdit.year
+        }
+        
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
@@ -27,6 +36,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func onTouchSaveData(_ sender: UIButton) {
+        
+        var car: Car
+        
         print("OnTouch Save data")
         
         guard let make = makeTextField.text, !make.isEmpty else {
@@ -48,8 +60,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         print("Model: \(model)")
         print("Year: \(year)")
         
+        if let carEdit = carEdit {
+            car = carEdit
+            car.make = make
+            car.model = model
+            car.year = year
+            delegate?.reloadData()
+        } else {
+        
         let car = Car(make: make, model: model, year: year)
         delegate?.onCreatedNew(car: car)
+        }
         navigationController?.popViewController(animated: true)
 
 
