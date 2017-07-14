@@ -17,6 +17,12 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let bmwX5 = Car(make: "BMW", model: "X5", year: "2016")
+        let bmwX6 = Car(make: "BMW", model: "X6", year: "2017")
+        cars.append(bmwX5)
+        cars.append(bmwX6)
+
+
         tableView.dataSource = self
 
     }
