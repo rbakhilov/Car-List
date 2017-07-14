@@ -41,7 +41,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "createNewCarsSegue" {
+        if segue.identifier == "createNewCarSegue" {
             let nextVC = segue.destination as! ViewController
             nextVC.delegate = self
         }
