@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AddNewPersonDelegate: class {
+protocol AddNewCarDelegate: class {
     
     func onCreatedNew(car: Car) -> Void
     

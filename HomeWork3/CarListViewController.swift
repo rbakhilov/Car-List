@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarListViewController: UIViewController, UITableViewDataSource, AddNewPersonDelegate {
+class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     

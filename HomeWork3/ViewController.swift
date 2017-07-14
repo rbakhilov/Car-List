@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var modelTextField: UITextField!
     @IBOutlet weak var carYear: UITextField!
     
-    weak var delegate: AddNewPersonDelegate?
+    weak var delegate: AddNewCarDelegate?
 
     var year = Array(1950...2017).map { String($0) }
     let picker = UIPickerView()
