@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarDelegate {
+class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarDelegate, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,6 +24,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
 
 
         tableView.dataSource = self
+        tableView.delegate = self
 
     }
     
@@ -67,4 +68,11 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
 }

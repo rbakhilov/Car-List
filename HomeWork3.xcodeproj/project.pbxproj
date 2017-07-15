@@ -62,7 +62,6 @@
 		3049461A1F17B78400C82888 /* HomeWork3 */ = {
 			isa = PBXGroup;
 			children = (
-				308CE28F1F196F3F00F69B57 /* Assets.xcassets */,
 				3049461B1F17B78400C82888 /* AppDelegate.swift */,
 				3049461D1F17B78400C82888 /* ViewController.swift */,
 				3049462D1F18246600C82888 /* CarListViewController.swift */,
@@ -72,6 +71,7 @@
 				304946241F17B78400C82888 /* LaunchScreen.storyboard */,
 				304946271F17B78400C82888 /* Info.plist */,
 				304946311F182D4100C82888 /* Car.swift */,
+				308CE28F1F196F3F00F69B57 /* Assets.xcassets */,
 			);
 			path = HomeWork3;
 			sourceTree = "<group>";
