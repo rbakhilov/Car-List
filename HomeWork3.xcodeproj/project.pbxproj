@@ -10,12 +10,12 @@
 		3049461C1F17B78400C82888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049461B1F17B78400C82888 /* AppDelegate.swift */; };
 		3049461E1F17B78400C82888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049461D1F17B78400C82888 /* ViewController.swift */; };
 		304946211F17B78400C82888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3049461F1F17B78400C82888 /* Main.storyboard */; };
-		304946231F17B78400C82888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304946221F17B78400C82888 /* Assets.xcassets */; };
 		304946261F17B78400C82888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304946241F17B78400C82888 /* LaunchScreen.storyboard */; };
 		3049462E1F18246600C82888 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049462D1F18246600C82888 /* CarListViewController.swift */; };
 		304946301F18296700C82888 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049462F1F18296700C82888 /* CarCell.swift */; };
 		304946321F182D4100C82888 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304946311F182D4100C82888 /* Car.swift */; };
 		304946341F1838DF00C82888 /* AddNewCarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304946331F1838DF00C82888 /* AddNewCarDelegate.swift */; };
+		308CE2901F196F3F00F69B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308CE28F1F196F3F00F69B57 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +23,13 @@
 		3049461B1F17B78400C82888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3049461D1F17B78400C82888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		304946201F17B78400C82888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		304946221F17B78400C82888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304946251F17B78400C82888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304946271F17B78400C82888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3049462D1F18246600C82888 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		3049462F1F18296700C82888 /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		304946311F182D4100C82888 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		304946331F1838DF00C82888 /* AddNewCarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCarDelegate.swift; sourceTree = "<group>"; };
+		308CE28F1F196F3F00F69B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +62,13 @@
 		3049461A1F17B78400C82888 /* HomeWork3 */ = {
 			isa = PBXGroup;
 			children = (
+				308CE28F1F196F3F00F69B57 /* Assets.xcassets */,
 				3049461B1F17B78400C82888 /* AppDelegate.swift */,
 				3049461D1F17B78400C82888 /* ViewController.swift */,
 				3049462D1F18246600C82888 /* CarListViewController.swift */,
 				3049462F1F18296700C82888 /* CarCell.swift */,
 				304946331F1838DF00C82888 /* AddNewCarDelegate.swift */,
 				3049461F1F17B78400C82888 /* Main.storyboard */,
-				304946221F17B78400C82888 /* Assets.xcassets */,
 				304946241F17B78400C82888 /* LaunchScreen.storyboard */,
 				304946271F17B78400C82888 /* Info.plist */,
 				304946311F182D4100C82888 /* Car.swift */,
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				304946261F17B78400C82888 /* LaunchScreen.storyboard in Resources */,
-				304946231F17B78400C82888 /* Assets.xcassets in Resources */,
+				308CE2901F196F3F00F69B57 /* Assets.xcassets in Resources */,
 				304946211F17B78400C82888 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +320,7 @@
 				3049462C1F17B78400C82888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
