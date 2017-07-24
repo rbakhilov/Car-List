@@ -73,9 +73,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             return
         }
         
+        guard let description = descriptionTextField.text, !model.isEmpty else {
+            showAlert(with: "Fill description")
+            return
+        }
+        
+        guard let logo = logoImageAdd.image, !model.isEmpty else {
+            showAlert(with: "Fill image")
+            return
+        }
+        
+        
+        
         print("Make: \(make)")
         print("Model: \(model)")
         print("Year: \(year)")
+        print("Description: \(description)")
         
         if let carEdit = carEdit {
             car = carEdit

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30E452E31F24AEB300B9B96E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452E21F24AEB300B9B96E /* Car.swift */; };
 		30E452E61F24AEC200B9B96E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452E51F24AEC200B9B96E /* AppDelegate.swift */; };
 		30E452E91F24AEDF00B9B96E /* AddNewCarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452E81F24AEDF00B9B96E /* AddNewCarDelegate.swift */; };
 		30E452EC1F24AF1B00B9B96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E452EB1F24AF1B00B9B96E /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		30E452F81F24AF5C00B9B96E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452F61F24AF5C00B9B96E /* ViewController.swift */; };
 		30E452FB1F24AF7B00B9B96E /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452FA1F24AF7B00B9B96E /* CarCell.swift */; };
 		30E452FF1F24D2B200B9B96E /* MakeCarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452FE1F24D2B200B9B96E /* MakeCarCell.swift */; };
+		30E453001F25EC8300B9B96E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E452E21F24AEB300B9B96E /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,8 +214,8 @@
 				30E452E91F24AEDF00B9B96E /* AddNewCarDelegate.swift in Sources */,
 				30E452E61F24AEC200B9B96E /* AppDelegate.swift in Sources */,
 				30E452F81F24AF5C00B9B96E /* ViewController.swift in Sources */,
+				30E453001F25EC8300B9B96E /* Car.swift in Sources */,
 				30E452FB1F24AF7B00B9B96E /* CarCell.swift in Sources */,
-				30E452E31F24AEB300B9B96E /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
