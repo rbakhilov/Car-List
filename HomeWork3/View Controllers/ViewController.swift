@@ -8,16 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var logoImageAdd: UIImageView!
     @IBOutlet weak var makeTextField: UITextField!
     @IBOutlet weak var modelTextField: UITextField!
     @IBOutlet weak var carYear: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     
     weak var delegate: AddNewCarDelegate?
     var carEdit: Car?
-    
-
+    var imagePicker = UIImagePickerController()
     var year = Array(1950...2017).map { String($0) }
     let picker = UIPickerView()
     
@@ -33,6 +34,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         picker.delegate = self
         picker.dataSource = self
         carYear.inputView = picker
+    }
+    
+    @IBAction func onTouchImageAdd(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
+     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            logoImageAdd.image = image
+        }
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func onTouchSaveData(_ sender: UIButton) {
@@ -68,7 +85,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             delegate?.reloadData()
         } else {
         
-        let car = Car(make: make, model: model, year: year)
+            let car = Car(make: make, model: model, year: year, description: description, logo: logo)
         delegate?.onCreatedNew(car: car)
         }
         navigationController?.popViewController(animated: true)

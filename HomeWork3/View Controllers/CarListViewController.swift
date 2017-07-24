@@ -22,6 +22,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
 
     }
     
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -36,6 +37,8 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
         cell.makeLabel.text = car.make
         cell.modelLabel.text = car.model
         cell.yearLabel.text = car.year
+        cell.descriptionLabel.text = car.description
+        cell.logoLabel.image = car.logo
         
         return cell
     }

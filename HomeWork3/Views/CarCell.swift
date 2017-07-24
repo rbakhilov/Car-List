@@ -13,6 +13,8 @@ class CarCell: UITableViewCell {
     @IBOutlet weak var makeLabel: UILabel!
     @IBOutlet weak var modelLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var logoLabel: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

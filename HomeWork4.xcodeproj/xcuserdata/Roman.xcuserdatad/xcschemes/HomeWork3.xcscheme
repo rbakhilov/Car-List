@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "304946171F17B78400C82888"
-               BuildableName = "HomeWork3.app"
-               BlueprintName = "HomeWork3"
-               ReferencedContainer = "container:HomeWork3.xcodeproj">
+               BuildableName = "HomeWork4.app"
+               BlueprintName = "HomeWork4"
+               ReferencedContainer = "container:HomeWork4.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304946171F17B78400C82888"
-            BuildableName = "HomeWork3.app"
-            BlueprintName = "HomeWork3"
-            ReferencedContainer = "container:HomeWork3.xcodeproj">
+            BuildableName = "HomeWork4.app"
+            BlueprintName = "HomeWork4"
+            ReferencedContainer = "container:HomeWork4.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304946171F17B78400C82888"
-            BuildableName = "HomeWork3.app"
-            BlueprintName = "HomeWork3"
-            ReferencedContainer = "container:HomeWork3.xcodeproj">
+            BuildableName = "HomeWork4.app"
+            BlueprintName = "HomeWork4"
+            ReferencedContainer = "container:HomeWork4.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304946171F17B78400C82888"
-            BuildableName = "HomeWork3.app"
-            BlueprintName = "HomeWork3"
-            ReferencedContainer = "container:HomeWork3.xcodeproj">
+            BuildableName = "HomeWork4.app"
+            BlueprintName = "HomeWork4"
+            ReferencedContainer = "container:HomeWork4.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
