@@ -28,6 +28,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             makeTextField.text = carEdit.make
             modelTextField.text = carEdit.model
             carYear.text = carEdit.year
+            descriptionTextField.text = carEdit.description
+            logoImageAdd.image = carEdit.logo
+            
         }
         
         super.viewDidLoad()
@@ -95,6 +98,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             car.make = make
             car.model = model
             car.year = year
+            car.logo = logo
+            car.description = description
             delegate?.reloadData()
         } else {
         

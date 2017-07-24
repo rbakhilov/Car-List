@@ -38,7 +38,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
         cell.modelLabel.text = car.model
         cell.yearLabel.text = car.year
         cell.descriptionLabel.text = car.description
-        cell.logoLabel.image = car.logo
+//        cell.logoLabel.image = car.logo
         
         return cell
     }
