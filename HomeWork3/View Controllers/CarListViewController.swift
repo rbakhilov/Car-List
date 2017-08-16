@@ -5,11 +5,10 @@
 //  Created by Роман on 15.07.17.
 //  Copyright © 2017 GoIT. All rights reserved.
 //
-
 import UIKit
 
 class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarDelegate, UITableViewDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var cars: [Car] = []
@@ -21,7 +20,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
         
         tableView.dataSource = self
         tableView.delegate = self
-
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,7 +67,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, AddNewCarD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
